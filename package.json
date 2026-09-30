@@ -1,0 +1,21 @@
+{
+  "name": "unlock-short-bot",
+  "version": "1.0.0",
+  "description": "Scans token unlocks once a day and sends Telegram alerts for coins worth shorting on centralized exchanges",
+  "main": "src/index.js",
+  "private": true,
+  "scripts": {
+    "start": "node src/index.js",
+    "scan": "node src/index.js --once",
+    "dry-run": "node src/index.js --once --dry-run",
+    "test-alert": "node src/index.js --test-alert",
+    "mock": "node test/mock-run.js"
+  },
+  "engines": {
+    "node": ">=18.17"
+  },
+  "dependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "node-cron": "^3.0.3"
+  }
+}
