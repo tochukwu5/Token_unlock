@@ -1,4 +1,4 @@
 node_modules/
 data/
 test/out/
-.env
+config.bat
